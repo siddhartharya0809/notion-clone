@@ -9,7 +9,7 @@ import MeetingNotesImg from "../../public/svg/meeting-notes.svg"
 import AirplaneImg from "../../public/svg/airplane.svg"
 import CalenderImg from "../../public/svg/calender.svg"
 import HabitTrackingImg from "../../public/svg/tracker.svg"
-
+import CompanyWikiImg from "../../public/images/company-wiki-template.png"
 
 function HowToNotion(props) {
   return (
@@ -37,7 +37,7 @@ function HowToNotion(props) {
         </div>
       </div>
       <div className="flex justify-between items-centers mt-5">
-        <div className="bg-stone-100 flex grow flex-col w-[350px] mx-5 pl-8 pr-1 pt-7 pb-0.5 rounded-xl border-2 border-solid border-stone-100 items-start max-md:max-w-full max-md:mt-6 max-md:pl-5">
+        <div className="bg-stone-100 flex grow flex-col w-[520px] mx-5 pl-8 pr-1 pt-7 pb-0.5 rounded-xl border-2 border-solid border-stone-100 items-start max-md:max-w-full max-md:mt-6 max-md:pl-5">
           <Image
             loading="lazy"
             src={HomeImg}
@@ -56,7 +56,9 @@ function HowToNotion(props) {
               </a>
             
           </div>
-          <div className="bg-zinc-300 self-stretch flex shrink-0 h-[371px] flex-col mt-32 rounded-xl max-md:max-w-full max-md:mt-10" />
+          <div className="self-stretch flex shrink-0 h-[371px] flex-col mt-32 rounded-xl max-md:max-w-full max-md:mt-10" >
+          <Image src={CompanyWikiImg} alt="company-wiki" />
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-5">
           {/* Example usage of the ProductRoadmapBlock component */}

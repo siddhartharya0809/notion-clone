@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
+import ShuffleSVG from "../../public/svg/shuffle.svg";
 
 import Calender from "../../public/images/calendar.png";
 import Gallery from "../../public/images/gallery.png";
@@ -10,7 +11,7 @@ import Kanban from "../../public/images/kanban.png";
 import List from "../../public/images/list.png";
 import Table from "../../public/images/table.png";
 import Timeline from "../../public/images/timeline.png";
-import ShuffleSVG from "../../public/svg/shuffle.svg";
+
 const imageMap = {
   board: Kanban,
   table: Table,
