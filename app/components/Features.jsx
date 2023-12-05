@@ -1,41 +1,37 @@
 // MyFeatures.jsx
 
 import React from "react";
-import FeatureBlock from "./FeatureBlock"; // Assuming FeatureBlock is in the same directory
+import FeatureBlock from "./FeatureBlock";
 
-import aiImg from "../../public/svg/ai.svg"
-import arrowImg from "../../public/svg/arrow.svg"
-import docsImg from "../../public/svg/docs.svg"
-import booksImg from "../../public/svg/books.svg"
 
 const MyFeatures = () => {
-  // Define your features here
   const features = [
     {
       id: 1,
-      imageUrl: {aiImg},
+      imageUrl: "../../public/Icons/ai-img.png",
       title: "AI",
       subtitle: "Now ith Q&A",
+      details: "Ask literally anything. Notion will answer",
       learnMoreLink: "https://www.notion.so/product/ai", 
     },
     {
       id: 2,
-      imageUrl: {booksImg},
       title: "Wikis",
-      subtitle: "Your Personal Wiki",
+      subtitle: "Personal Wiki",
+      details: "Centralize your knowledge. No more hunting for answers.",
       learnMoreLink: "https://notion.so/product/wikis", 
     },
     {
       id: 3,
-      imageUrl: {arrowImg},
       title: "Projects",
-      subtitle: "Manage your projects",
+      details: "Manage complex projects without the chaos.",
+      subtitle: "Manage",
       learnMoreLink: "https://www.notion.so/product/projects", 
     },
     {
       id: 4,
-      imageUrl: {docsImg},
       title: "Docs",
+      details: "Simple, Powerful, beautiful. Next-gen notes & docs.",
       subtitle: "Docs & more",
       learnMoreLink: "https://www.notion.so/product/docs",
     },
@@ -48,9 +44,9 @@ const MyFeatures = () => {
           <div key={feature.id} className="border shadow-lg bg-white w-auto grow mx-5 rounded-xl border-solid border-black border-opacity-10 items-start max-md:mt-5">
             <div className="self-stretch flex flex-col items-stretch w-25 max-md:pr-5">
               <FeatureBlock
-                imageUrl={feature.imageUrl}
                 title={feature.title}
                 subtitle={feature.subtitle}
+                details={feature.details}
                 learnMoreLink={feature.learnMoreLink}
               />
             </div>

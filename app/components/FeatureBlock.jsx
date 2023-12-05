@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import aiImg from "../../public/svg/ai.svg"
+import aiImg from "../../public/Icons/ai-img.png"
 
-const FeatureBlock = ({ imageUrl, title, subtitle, learnMoreLink }) => {
+const FeatureBlock = ({ imageUrl, title, subtitle }) => {
   return (
     <div className="flex items-stretch justify-between gap-2.5 w-50 max-md:justify-center">
       <div className="bg-purple-100 flex aspect-square flex-col justify-center items-center w-8 h-8 px-1.5 rounded-md">
@@ -26,18 +26,18 @@ const FeatureBlock = ({ imageUrl, title, subtitle, learnMoreLink }) => {
   );
 };
 
-function MyUpdatedComponent(props) {
+function MyUpdatedComponent({imageUrl, title, subtitle, details}) {
   return (
     <div className="flex justify-center items-center w-50">
-      <form className="border shadow-lg bg-white flex w-full grow flex-col mx-auto pt-2.5 pb-6 rounded-xl border-solid border-black border-opacity-10 items-start max-md:mt-5">
+      <form className="border shadow-lg bg-white flex w-full grow flex-col mx-auto max-w-[450px] pt-2.5 pb-6 rounded-xl border-solid border-black border-opacity-10 items-start max-md:mt-5">
         <div className="self-stretch flex flex-col items-stretch pl-5 pr-5 max-md:pr-5">
           <FeatureBlock
             imageUrl={aiImg}
-            title="AI"
-            subtitle="Now with Q&A"
+            title={title}
+            subtitle={subtitle}
           />
           <div className="text-zinc-950 text-sm leading-5 tracking-normal mt-5">
-            Ask literally anything. Notion will answer.
+            {details}
           </div>
           <div className="flex items-stretch justify-between gap-1 mt-2">
             <a href="#" className="text-purple-600 text-sm leading-5 tracking-normal whitespace-nowrap hover:underline hover:cursor-pointer">
