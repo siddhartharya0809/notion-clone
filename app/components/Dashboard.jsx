@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
-import ShuffleSVG from "../../public/svg/shuffle.svg";
+import ShuffleSVG from "../../public/images/shuffle.png";
 
 import Calender from "../../public/images/calendar.png";
 import Gallery from "../../public/images/gallery.png";
